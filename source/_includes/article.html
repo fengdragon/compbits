@@ -11,7 +11,7 @@
 
 
 {% if index %}
-  <div class="entry-content">{{ content | excerpt }}</div>
+  <div class="post-content">{{ content | excerpt }}</div>
   {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
   {% if excerpted == 'true' %}
     <footer>
@@ -19,5 +19,5 @@
     </footer>
   {% endif %}
 {% else %}
-<div class="entry-content">{{ content }}</div>
+<div class="post-content">{{ content }}</div>
 {% endif %}
